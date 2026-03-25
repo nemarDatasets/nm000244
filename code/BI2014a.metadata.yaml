@@ -1,0 +1,171 @@
+_dataset:
+  class: BI2014a
+  code: BrainInvaders2014a
+  doi: https://doi.org/10.5281/zenodo.3266222
+  interval:
+  - 0
+  - 1
+  n_subjects: 64
+  paradigm: p300
+abstract: We describe the experimental procedures for the bi2014a dataset that contains electroencephalographic (EEG) recordings
+  of 71 subjects playing to a visual P300 Brain-Computer Interface (BCI) videogame named Brain Invaders. The interface uses
+  the oddball paradigm on a grid of 36 symbols (1 Target, 35 Non-Target) that are flashed pseudo-randomly to elicit the P300
+  response. EEG data were recorded using 16 active dry electrodes with up to three game sessions. The experiment took place
+  at GIPSA-lab, Grenoble, France, in 2014.
+acquisition:
+  cap_manufacturer: g.tec
+  cap_model: g.Sahara
+  channel_types:
+    eeg: 16
+  electrode_material: gold-alloy
+  electrode_type: dry 8-pins gold-alloy electrodes
+  filters: no digital filter applied
+  ground: FZ
+  hardware: g.USBamp (g.tec, Schiedlberg, Austria)
+  line_freq: 50.0
+  montage: standard_1010
+  n_channels: 16
+  reference: right earlobe
+  sampling_rate: 512.0
+  sensor_type: dry electrodes
+  sensors:
+  - Fp1
+  - Fp2
+  - F5
+  - AFz
+  - F6
+  - T7
+  - Cz
+  - T8
+  - P7
+  - P3
+  - Pz
+  - P4
+  - P8
+  - O1
+  - Oz
+  - O2
+  software: OpenVibe
+bci_application:
+  applications:
+  - gaming
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  evaluation_type:
+  - cross_session
+data_structure:
+  n_blocks: 9
+  n_trials: variable; up to 8 attempts per level, 9 levels per session
+  trials_context: 9 levels per session, up to 8 attempts per level to destroy target
+documentation:
+  acknowledgements: At the end of the experiment one ticket of cinema was offered to each subject, for a value of 7.5 euros
+    per subject.
+  associated_paper_doi: hal-02171575
+  country: FR
+  data_url: https://doi.org/10.5281/zenodo.3266223
+  description: Dataset contains electroencephalographic (EEG) recordings of 71 subjects playing to a visual P300 Brain-Computer
+    Interface (BCI) videogame named Brain Invaders. The interface uses the oddball paradigm on a grid of 36 symbols (1 Target,
+    35 Non-Target) that are flashed pseudo-randomly to elicit the P300 response.
+  doi: 10.5281/zenodo.3266223
+  ethics_approval:
+  - Approved by the Ethical Committee of the University of Grenoble Alpes (Comité d'Ethique pour la Recherche Non-Interventionnelle)
+  institution: GIPSA-lab, CNRS, University Grenoble-Alpes, Grenoble INP
+  institution_address: GIPSA-lab, 11 rue des Mathématiques, Grenoble Campus BP46, F-38402, France
+  investigators:
+  - Louis Korczowski
+  - Ekaterina Ostaschenko
+  - Anton Andreev
+  - Grégoire Cattan
+  - Pedro Luiz Coelho Rodrigues
+  - Violette Gautheret
+  - Marco Congedo
+  keywords:
+  - Electroencephalography (EEG)
+  - P300
+  - Brain-Computer Interface
+  - Experiment
+  - Collaboration
+  - Multi-User
+  - Hyperscanning
+  license: CC-BY-4.0
+  publication_year: 2019
+  repository: Zenodo
+  senior_author: Marco Congedo
+experiment:
+  class_labels:
+  - Target
+  - NonTarget
+  events:
+    NonTarget: 1
+    Target: 2
+  feedback_type: visual
+  instructions: Destroy the target symbol by focusing attention on it. Players had up to eight attempts to destroy the target
+    symbol per level.
+  mode: online
+  n_classes: 2
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_presentation:
+    animation: symbols slowly and regularly moving according to predefined path
+    n_groups: '12'
+    n_symbols: '36'
+    non_target_flashes_per_repetition: '10'
+    symbols_per_group: '6'
+    target_flashes_per_repetition: '2'
+  stimulus_type: visual flashes
+  study_design: calibration-less P300-based BCI system with dry electrodes; screening session for potential candidates for
+    a broader multi-user BCI study
+  task_type: oddball
+file_format: mat and csv
+methodology: 'The experiment was designed to study the viability of a calibration-less P300-based BCI system with dry electrodes.
+  Visual P300 is an event-related potential (ERP) elicited by an expected but unpredictable target visual stimulation (oddball
+  paradigm), with peaking amplitude 240-600 ms after stimulus onset. Two event-related stimuli: Target (P300 expected) and
+  Non-Target (no P300). The experiment used Brain Invaders, a P300-based BCI open-source software. A repetition is composed
+  of 12 flashes (one for each group), of which two include the Target symbol (Target flashes) and 10 do not (non-Target flashes).
+  The ratio of Target versus non-Target epochs in the whole datasets is one-to-five. During the experiment, the output of
+  a real-time adaptive Riemannian Minimum Distance to Mean (RMDM) classifier was used for assessing the participants'' command.
+  Game session was compounded by nine levels, consisting in a unique and predefined configuration of the 36 symbols of the
+  interface. Players had up to eight attempts to destroy the target symbol. If the player missed all eight attempts, the level
+  was started once again from the beginning. Average duration of five minutes for the nine levels. Experimenter could end
+  the experiment if no control over the BCI system was gained after 10 minutes.'
+paradigm_specific:
+  detected_paradigm: p300
+  n_repetitions: 12
+  n_targets: 1
+participants:
+  age_mean: 23.55
+  age_std: 3.13
+  bci_experience: 57 were naïve BCI participants
+  gender:
+    female: 22
+    male: 49
+  handedness: not specified
+  health_status: healthy
+  n_subjects: 64
+  species: human
+performance:
+  note: Real-time adaptive RMDM classifier used for assessing participants' command with calibration-free procedure
+preprocessing:
+  data_state: raw EEG with hardware tagging (USB digital-to-analog converter for synchronization)
+  notes: No digital filter applied during recording. USB digital-to-analog converter used to reduce jitter and synchronize
+    experimental tags with EEG signals.
+runs_per_session: 1
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - Riemannian Minimum Distance to Mean (RMDM)
+  - xDAWN
+  - Riemannian
+  feature_extraction:
+  - Covariance/Riemannian
+  - xDAWN
+tags:
+  modality:
+  - Visual
+  pathology:
+  - Healthy
+  type:
+  - Perception
