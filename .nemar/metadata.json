@@ -1,0 +1,113 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "Louis Korczowski": {},
+    "Ekaterina Ostaschenko": {
+      "orcid": "0000-0002-4817-5753"
+    },
+    "Anton Andreev": {},
+    "Grégoire Cattan": {
+      "orcid": "0000-0002-7515-0690"
+    },
+    "Pedro Luiz Coelho Rodrigues": {},
+    "Violette Gautheret": {},
+    "Marco Congedo": {
+      "orcid": "0000-0003-2196-0409"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.3266223",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000244",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000244",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.3266222",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "title": "P300 dataset BI2014a from a \"Brain Invaders\" experiment",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "1.1 GB (65 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises electroencephalographic (EEG) recordings from 71 healthy subjects performing a visual P300-based brain-computer interface task using the Brain Invaders videogame. Participants engaged with an oddball paradigm involving pseudo-random flashes of 36 symbols on a grid to elicit P300 event-related potentials. The study evaluated the feasibility of a calibration-less P300 BCI system using 16 dry electrodes, with real-time adaptive classification for online feedback during gameplay. The experiment was designed as a screening session for potential candidates for a broader multi-user BCI study.",
+  "methods_description": "EEG data were acquired using 16 active dry gold-alloy electrodes (g.Sahara cap, g.tec) at 512 Hz sampling rate with right earlobe reference and FZ ground. The visual oddball paradigm presented 36 symbols (1 target, 35 non-targets) in 12 groups with pseudo-random flashing. Each session comprised 9 levels with up to 8 attempts per level to identify the target symbol. A real-time adaptive Riemannian Minimum Distance to Mean (RMDM) classifier provided online feedback. Hardware synchronization was achieved using a USB digital-to-analog converter without digital filtering during acquisition. Up to three game sessions were conducted per subject.",
+  "keywords": [
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "Brain-Computer Interface"
+    },
+    {
+      "term": "Oddball paradigm"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "Dry electrodes"
+    },
+    {
+      "term": "Riemannian classification"
+    },
+    {
+      "term": "Gaming"
+    },
+    {
+      "term": "Calibration-less BCI"
+    },
+    {
+      "term": "Multi-User"
+    },
+    {
+      "term": "Hyperscanning"
+    }
+  ],
+  "source_hash": "693202d6ec2fde909563d1db4fd126318784e0536fb136a36db13ae219399554"
+}
