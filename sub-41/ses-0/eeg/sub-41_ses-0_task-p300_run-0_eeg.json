@@ -19,7 +19,9 @@
 	"CapManufacturer": "g.tec",
 	"CapManufacturersModelName": "g.Sahara",
 	"HardwareFilters": {
-		"HardwareFilter": "no digital filter applied"
+		"HardwareFilter": {
+			"Description": "no digital filter applied"
+		}
 	},
 	"TaskDescription": "[oddball] calibration-less P300-based BCI system with dry electrodes; screening session for potential candidates for a broader multi-user BCI study",
 	"Instructions": "Destroy the target symbol by focusing attention on it. Players had up to eight attempts to destroy the target symbol per level.",
