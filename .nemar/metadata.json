@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "P300 dataset BI2014a from a \"Brain Invaders\" experiment",
-  "description": "This dataset comprises electroencephalographic (EEG) recordings from 71 healthy subjects performing a visual P300-based brain-computer interface task using the Brain Invaders videogame. Participants engaged with an oddball paradigm involving pseudo-random flashes of a 36-symbol grid to elicit P300 event-related potentials. The study evaluated the feasibility of a calibration-less P300 BCI system using 16 dry electrodes, with real-time adaptive classification for online feedback during gameplay.",
-  "methods_description": "EEG data were acquired using 16 active dry gold-alloy electrodes (g.tec g.Sahara cap) at 512 Hz sampling rate with a g.USBamp amplifier and OpenVibe software. The reference electrode was placed at the right earlobe with ground at FZ. Participants completed up to 9 game levels per session, each consisting of 12 stimulus repetitions (2 target flashes, 10 non-target flashes) presented on a grid of 36 symbols. A real-time adaptive Riemannian Minimum Distance to Mean classifier provided online feedback. No digital filtering was applied during recording; synchronization was achieved using a USB digital-to-analog converter.",
+  "description": "This dataset comprises electroencephalographic (EEG) recordings from 71 healthy subjects performing a visual P300-based brain-computer interface task using the Brain Invaders videogame. Participants engaged with an oddball paradigm involving pseudo-random flashes of a 36-symbol grid to elicit P300 event-related potentials. The study evaluated the feasibility of a calibration-less P300 BCI system using 16 dry electrodes, with real-time adaptive classification for online feedback during gameplay. EEG data were recorded using 16 active dry electrodes with up to three game sessions per subject. The experiment took place at GIPSA-lab, Grenoble, France, in 2014.",
+  "methods_description": "EEG data were acquired using 16 active dry gold-alloy electrodes (g.Sahara cap, g.tec) at 512 Hz sampling rate with right earlobe reference and FZ ground. The visual oddball paradigm presented 36 symbols in 12 groups with pseudo-random flashing (2 target flashes, 10 non-target flashes per repetition). Each session comprised 9 levels with up to 8 attempts per level. Subjects completed up to three game sessions. A real-time adaptive Riemannian Minimum Distance to Mean (RMDM) classifier provided online feedback. Recording hardware included g.USBamp amplifier (g.tec) with OpenVibe software and USB digital-to-analog converter for synchronization.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -34,19 +34,34 @@
       "term": "Brain-Computer Interface"
     },
     {
+      "term": "Oddball paradigm"
+    },
+    {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "Oddball Paradigm"
+      "term": "Dry electrodes"
     },
     {
-      "term": "Dry Electrodes"
+      "term": "Riemannian classification"
     },
     {
-      "term": "Riemannian Classification"
+      "term": "Calibration-less BCI"
+    },
+    {
+      "term": "Experiment"
+    },
+    {
+      "term": "Collaboration"
+    },
+    {
+      "term": "Multi-User"
+    },
+    {
+      "term": "Hyperscanning"
     }
   ],
   "related_identifiers": [
@@ -98,5 +113,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "c250275cf6277ed458c0c10462f002267cc451d19e03bd28d7bd5fcaa10a6a39"
+  "source_hash": "e9e387c58de349b16cd277a8ae1978dc8f5ab459b0511d75982bfb6892fe903c"
 }
