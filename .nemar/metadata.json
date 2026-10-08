@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "P300 dataset BI2014a from a \"Brain Invaders\" experiment",
-  "description": "This dataset contains EEG recordings from 64 healthy participants playing Brain Invaders, a visual P300 brain-computer interface videogame based on an oddball paradigm with a grid of 36 symbols. Data were recorded with 16 dry electrodes at GIPSA-lab, Grenoble, in 2014 to study the viability of a calibration-less P300-based BCI. This is a BIDS-formatted derivative of the original Zenodo deposit, produced via MOABB.",
-  "methods_description": "EEG was recorded at 512 Hz from 16 dry gold-alloy g.Sahara electrodes with a g.USBamp amplifier (reference right earlobe, ground FZ) using OpenVibe. Participants played nine game levels, with up to eight attempts per level to destroy a target symbol. Each repetition had 12 flashes (2 target, 10 non-target), and a real-time adaptive Riemannian Minimum Distance to Mean classifier assessed the participants' commands.",
+  "description": "EEG recordings from 64 participants playing Brain Invaders, a visual P300 brain-computer interface game based on the oddball paradigm. Sixteen dry electrodes recorded responses to flashes of a 36-symbol grid (1 target, 35 non-target). The study examined the feasibility of a calibration-less P300 BCI with dry electrodes. It was conducted at GIPSA-lab, Grenoble, in 2014.",
+  "methods_description": "EEG was recorded at 512 Hz from 16 dry gold-alloy electrodes (g.tec g.Sahara cap, g.USBamp amplifier) with the reference on the right earlobe and the ground at FZ. Stimulation used the OpenViBE-based Brain Invaders game, with 12 flash groups per repetition (2 target, 10 non-target). Each session had nine levels, with up to eight attempts per level. A real-time adaptive Riemannian Minimum Distance to Mean classifier assessed the participants' commands without calibration.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -43,9 +43,6 @@
     },
     {
       "term": "Brain Invaders"
-    },
-    {
-      "term": "Riemannian classification"
     }
   ],
   "related_identifiers": [
@@ -97,5 +94,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "5da55049f2f5126e542024b1ca9161c13109589dcbb87df6b507c1a2957721be"
+  "source_hash": "04b5602766fe57bea1f3ea955bb3325b1c54237b9bac23cbe6619412135ec527"
 }
